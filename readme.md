@@ -18,7 +18,7 @@ JSON (JavaScript Object Notation) adalah sebuah format data yang digunakan untuk
 <p align="center"><img src="./img/6a.png"></p>
 
 #### `6b`
-<p align="center"><img src="./img/6a.png"></p>
+<p align="center"><img src="./img/6b.png"></p>
 
 #### `6c`
-<p align="center"><img src="./img/6a.png"></p>
+<p align="center"><img src="./img/6c.png"></p>
