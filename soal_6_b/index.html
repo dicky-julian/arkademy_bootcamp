@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkademy</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <img src="./assets/images/logo.svg" alt="">
+            <form action="">
+                <input type="text" placeholder="Search ...">
+            </form>
+            <button class="bt-primary" onclick="showModalAdd()">ADD</button>
+        </nav>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Cashier</th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-content">
+                    <tr>
+                        <td>1</td>
+                        <td>Pevita Pearce</td>
+                        <td>Latte</td>
+                        <td>Drink</td>
+                        <td>10000</td>
+                        <td class="tool">
+                            <img src="./assets/images/i_edit.png" alt="" onclick="showModalEdit()">
+                            <img src="./assets/images/i_delete.png" alt=""onclick="showModalDelete()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raisa Andriana</td>
+                        <td>Cake</td>
+                        <td>Food</td>
+                        <td>20000</td>
+                        <td class="tool">
+                            <img src="./assets/images/i_edit.png" alt="" onclick="showModalEdit()">
+                            <img src="./assets/images/i_delete.png" alt=""onclick="showModalDelete()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dicky Julian</td>
+                        <td>Tempe Goreng</td>
+                        <td>Drink</td>
+                        <td>45000</td>
+                        <td class="tool">
+                            <img src="./assets/images/i_edit.png" alt="" onclick="showModalEdit()">
+                            <img src="./assets/images/i_delete.png" alt=""onclick="showModalDelete()">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="show-empty" style="display: none;">
+        <img src="./assets/images/bg-not-found.webp">
+        <h3>Tidak ada data yang ditampilkan</h3>
+    </div>
+    <div class="modal" style="display: none;">
+        <div class="bg-fade"></div>
+        <div class="content" id="form_add">
+            <div class="header">
+                <h4 id="form-status"></h4>
+                <img id="bt-close-modal" src="./assets/images/i_close.png" alt="" onclick="closeModal()">
+            </div>
+            <form id="form-input"></form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+    <script src="./assets/scripts/app.js"></script>
+</body>
+
+</html>
